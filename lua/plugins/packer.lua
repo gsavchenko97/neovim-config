@@ -104,8 +104,8 @@ packer.startup(function(use)
     use({ "shortcuts/no-neck-pain.nvim", tag = "*" })
     -- Projects
     use("ahmedkhalf/project.nvim")
-    -- Git decorations
-    use("lewis6991/gitsigns.nvim")
+    -- -- Git decorations
+    -- use("lewis6991/gitsigns.nvim")
     -- -- Toggle term
     -- use { "akinsho/toggleterm.nvim", tag = '*' }
     -- -- Keymappings list
