@@ -37,7 +37,7 @@ packer.startup(function(use)
   local setup_colorscheme = function()
     -- Themes
     use("marko-cerovac/material.nvim")
-    use("navarasu/onedark.nvim")
+    -- use("navarasu/onedark.nvim")
     -- use 'EdenEast/nightfox.nvim'
     -- use 'rose-pine/neovim'
     -- use 'tiagovla/tokyodark.nvim'

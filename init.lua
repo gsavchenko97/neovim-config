@@ -10,7 +10,6 @@ require("plugins.packer")
 require("plugins.0-core.impatient")
 -- 1) Colorscheme
 require("plugins.1-colorscheme.material")
--- require('plugins.1-colorscheme.onedark')
 -- 2) Editor
 require("plugins.2-editor.comment")
 require("plugins.2-editor.nvim-autopairs")
