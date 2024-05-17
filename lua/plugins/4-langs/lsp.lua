@@ -115,7 +115,7 @@ mason_lspconfig.setup_handlers({
       settings = servers[server_name],
     })
   end,
-      ["clangd"] = function()
+  ["clangd"] = function()
     require("lspconfig")["clangd"].setup({
       capabilities = cpp_capabilities,
       on_attach = on_attach,

@@ -1,7 +1,6 @@
 -- [[ BASE.AUTOCMDS ]]
 local M = {}
 
-local log = require("kernel.log")
 
 local prepare_pattern = function(projectList)
   local pattern = ""
@@ -21,7 +20,6 @@ local set_indentation_autocmd = function()
   local tabs = vim.api.nvim_create_augroup("MyTabs", { clear = true })
   vim.api.nvim_create_autocmd("BufEnter", {
     callback = function()
-      log.print("Pattern:" .. pattern)
       local tab_width = 4
       vim.opt.shiftwidth = tab_width
       vim.opt.tabstop = tab_width
@@ -49,10 +47,6 @@ local set_helper_autocmd = function()
   local my_group = vim.api.nvim_create_augroup("MyPersonal", { clear = true })
   vim.api.nvim_create_autocmd("BufEnter", {
     callback = function()
-      log.print("AutoCmd")
-      log.print("Pattern:" .. pattern)
-      log.print("Field:" .. vim.fn.expand("<sfile>") .. "$")
-      log.print("Field:" .. vim.fn.expand("<afile>") .. "$")
     end,
     group = my_group,
     pattern = "/home/gsav/repos/ozon/*,/home/gsav/repos/shad/*",

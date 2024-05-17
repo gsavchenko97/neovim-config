@@ -26,13 +26,6 @@ packer.startup(function(use)
   -- Plugin manager (should go first)
   use("wbthomason/packer.nvim")
 
-  -- [[ CORE ]]
-  local setup_core_plugins = function()
-    -- Speedup neovim start
-    use("lewis6991/impatient.nvim")
-  end
-  setup_core_plugins()
-
   -- [[ COLORSCHEME ]]
   local setup_colorscheme = function()
     -- Themes
